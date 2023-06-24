@@ -1,17 +1,17 @@
 
 
-
-import './Carousel.css'
-import VideoCard from "./VideoCard";
-import Carousel from "./Carousel";
 import {useState} from 'react';
 
 
 
 
 import React, { Component } from 'react';
-import ImageCard from './imageCard';
-import ReactVideoGallery from './ReactVideoGallery';
+import './Carousel.css'
+import VideoCard from "./VideoCard";
+import Carousel from "./Carousel";
+
+
+import Images from './Images';
 
 
 
@@ -22,43 +22,37 @@ export default class App extends Component {
 
   handleDisplayImages=()=>
   {
-    console.log("image");
-    
-    
-    
+    this.setState({ show: this.state.count = false })
   }
   handleDisplayVideos=()=>
   {
-    console.log("video");
-    
+    this.setState({ show: this.state.count = true })
   }
+  
+  constructor(props) {
+    super(props);
+    this.state = {
+      show : false
+      
+    };
+  }
+
+  
+
 
   render() {
     
-    return (
+    return ( 
      <div>
       <Carousel/>
       <div className="btns">
-      <button onClick={this.handleDisplayImages}>Image</button>
-      <button onClick={this.handleDisplayVideos}>videos</button>
+      <button  id={this.state.show?"btnUnclicked":"btnClicked"}onClick={this.handleDisplayImages}>Image</button>
+      <button  id={this.state.show?"btnClicked":"btnUnclick"} onClick={this.handleDisplayVideos}>videos</button>
       </div>
-      <div className="container my-3">
-        <div className="row">
-          <div className="col-md-4">
-          <ImageCard imageUrl="https://img.freepik.com/free-photo/shot-cute-baby-girl-looking-camera_329181-19580.jpg?w=2000"/>
-          </div>
-          <div className="col-md-4">
-          <ImageCard imageUrl="https://img.freepik.com/free-photo/shot-cute-baby-girl-looking-camera_329181-19580.jpg?w=2000"/>
-          </div>
-          <div className="col-md-4">
-          <ImageCard imageUrl="https://img.freepik.com/free-photo/shot-cute-baby-girl-looking-camera_329181-19580.jpg?w=2000"/>
-          </div>
-          <div className="col-md-4">
-          <ImageCard imageUrl="https://img.freepik.com/free-photo/shot-cute-baby-girl-looking-camera_329181-19580.jpg?w=2000"/>
-          </div>
-        </div>
-      </div>
+      {
+      this.state.show?<VideoCard photoType="trending video"/>:<Images photoType="trending photos"/>
 
+      }
 
     </div>
     

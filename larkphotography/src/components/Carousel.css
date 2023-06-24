@@ -25,21 +25,28 @@
     gap: 20px;
   }
   .btns button {
-    background-color: transparent;
-    outline: none;
-    border: none;
+    background-color: #fff;
+    outline: whitesmoke;
+    border: whitesmoke;
     padding: 15px 30px;
-    font-size: 1.1rem;
+    font-size: 1.0rem;
     border-radius: 40px;
     text-transform: capitalize;
     transition-duration: 300ms;
     cursor: pointer;
+    font-weight: bold;
   }
-  .btns button:first-child {
-    background-color: #000;
-    color: #fff;
+  #btnClicked {
+    background-color:#FAD02C;
+    color: #000;
+    font-weight: bold;
+  }
+  #btnUnclick {
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
   }
   .btns button:hover {
-    opacity: 0.7;
+    opacity: 1;
   }
-  
+ 

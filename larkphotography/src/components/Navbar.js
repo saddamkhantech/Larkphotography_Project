@@ -2,7 +2,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
-
+import './Carousel.css'
 export class Navbar extends Component {
 
 
@@ -10,7 +10,7 @@ export class Navbar extends Component {
     return (
       <div>
         
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <nav className="navbar navbar-expand-lg bg-warning">
   <div className="container-fluid">
     <a className="navbar-brand" to="/">LarkPhotography</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,7 +22,7 @@ export class Navbar extends Component {
           <Link className="nav-link" aria-current="page" to="/">Home</Link>
         </li>
         <li className="nav-item"><Link className="nav-link" to="/wedding">Wedding</Link></li>
-        <li className="nav-item"><Link className="nav-link" to="/prewedding">PreWedding</Link></li>
+        <li className="nav-item"><Link className="nav-link active:bg-yellow-500" to="/prewedding">PreWedding</Link></li>
         <li className="nav-item"><Link className="nav-link" to="/desWeding">Destination Wedding</Link></li>
         <li className="nav-item"><Link className="nav-link" to="/babyPhoto">Baby Photoshoot</Link></li>
         <li className="nav-item"><Link className="nav-link" to="/productPhoto">Product Photography</Link></li>
