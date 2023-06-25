@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Larkphotography_Project/static/css/main.069081af.css",
-    "main.js": "/Larkphotography_Project/static/js/main.20bd4868.js",
+    "main.js": "/Larkphotography_Project/static/js/main.6cd90852.js",
     "static/js/787.99e5e783.chunk.js": "/Larkphotography_Project/static/js/787.99e5e783.chunk.js",
     "index.html": "/Larkphotography_Project/index.html",
     "main.069081af.css.map": "/Larkphotography_Project/static/css/main.069081af.css.map",
-    "main.20bd4868.js.map": "/Larkphotography_Project/static/js/main.20bd4868.js.map",
+    "main.6cd90852.js.map": "/Larkphotography_Project/static/js/main.6cd90852.js.map",
     "787.99e5e783.chunk.js.map": "/Larkphotography_Project/static/js/787.99e5e783.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.069081af.css",
-    "static/js/main.20bd4868.js"
+    "static/js/main.6cd90852.js"
   ]
 }
