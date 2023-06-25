@@ -20,10 +20,11 @@ export default class App extends Component {
     return (
       
 <BrowserRouter>
-<Navbar/>
+      <Navbar/>
       <Routes>
-        
-        <Route  exact path="/" element={<Home/>}></Route>
+      
+        <Route   path="/Larkphotography_Project" element={<Home/>}></Route>
+        <Route   path="/" element={<Home/>}></Route>
         <Route  exact path="/wedding" element={<Wedding/>}></Route>
         <Route  exact path="/prewedding" element={<PreWedding/>}></Route>
         <Route  exact path="/desWeding" element={<DestinationWedding/>}></Route>
